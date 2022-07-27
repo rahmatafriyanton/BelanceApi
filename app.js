@@ -19,6 +19,9 @@ app.use(methodOverride("_method"))
 const journeyRouter = require("./src/routes/journeyRouter")
 app.use("/journey", journeyRouter)
 
+const scheduleRouter = require("./src/routes/scheduleRouter")
+app.use("/schedule", scheduleRouter)
+
 
 // starting server
 app.listen(3000, function() {
