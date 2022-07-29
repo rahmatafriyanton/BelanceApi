@@ -1,7 +1,7 @@
 module.exports = {
     // GET Action
     get: function(con, callback) {
-      con.query("SELECT * FROM tb_journey", callback)
+      con.query("SELECT * FROM tb_journey ORDER BY nama_journey", callback)
     },
   
     getById: function(con, id, callback) {

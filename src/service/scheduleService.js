@@ -10,8 +10,7 @@ module.exports = {
 		con.query(
 			`INSERT INTO tb_schedule SET 
 			schedule_type = '${data.schedule_type}', 
-			start_time = '${data.start_time}', 
-			end_time = '${data.end_time}', 
+			time = '${data.time}', 
 			user_id = '1'`,
 			callback
 			)
